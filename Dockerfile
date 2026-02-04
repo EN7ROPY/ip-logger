@@ -1,5 +1,5 @@
 FROM debian:latest
-MAINTAINER info@niclas-sieveneck.de
+#MAINTAINER info@niclas-sieveneck.de
 
 RUN apt-get update && apt-get -y install cron curl
 
