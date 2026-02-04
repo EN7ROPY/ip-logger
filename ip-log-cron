@@ -1,0 +1,4 @@
+# /etc/cron.d/ip-log-cron: crontab file for ip-log
+#00 9    * * *   root    /var/iplog.sh > /dev/null 2>&1
+## test
+* * * * *   root    /var/iplog.sh > /dev/null 2>&1

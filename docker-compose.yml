@@ -1,0 +1,12 @@
+services:
+  ip-logger:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: entr0py/ip-logger
+    # Host network mode to get real client IPs
+    network_mode: 'host'
+    container_name: ip-logger
+    restart: unless-stopped
+    volumes:
+      - ./logs:/var/iplogs
