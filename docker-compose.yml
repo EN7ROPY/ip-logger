@@ -3,7 +3,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: entr0py/ip-logger
+    image: entr0pyd/ip-logger
     # Host network mode to get real client IPs
     network_mode: 'host'
     container_name: ip-logger
